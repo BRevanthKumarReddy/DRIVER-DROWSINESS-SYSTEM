@@ -4,10 +4,6 @@ import imutils
 import dlib
 from imutils import face_utils
 from scipy.spatial import distance
-from  pygame import mixer
-
-mixer.init()
-mixer.music.load("ALARM")
 
 def eye_aspect_ratio(eye):
 	A = distance.euclidean(eye[1], eye[5])
